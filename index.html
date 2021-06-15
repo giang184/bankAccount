@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Bank Account</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to Bank of the Web!</h1>
+    <hr>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <form id="new-account">
+        <h2>Register a new account</h2>
+        <br>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="form-group">
+            <label for="initialDeposit">Initial Deposit: </label>
+            <input type="text" id="initialDeposit">
+          </div>
+          <button type="submit" class="btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div class="col-md-1">
+      </div>
+      
+      <div class="col-md-6">
+        <form id="deposit">
+        <h2>Deposit or withdrawal funds:</h2>
+        <br>
+        <div class="form-group">
+          <label for="accountID">Account ID:</label>
+          <input type="text" id="accountID">
+        </div>
+          <div class="form-group">
+            <label for="deposit">Deposit amount:</label>
+            <input type="text" id="deposit">
+          </div>
+          <div class="form-group">
+            <label for="withdrawal">Withdrawal amount</label>
+            <input type="text" id="withdrawal">
+          </div>
+          <button type="submit" class="btn-primary">Deposit/Withdraw</button>
+        </form> 
+      </div>
+    </div>
+    <br>  <br>   <hr> <br>  
+    <div class="row">
+      <div class="col-md-5">
+        <h2>Account List:</h2>
+            <ul id="accounts">
+            </ul>
+            <br>
+            <br>
+            <br>
+      </div>
+      <div class="col-md-6">
+        <div id="show-account">
+          <h2>Account Details:</h2>
+          <p>Name: <span class="name"></span></p>
+          <p>Account ID: <span class="accountID"></span></p>
+          <p>Balance: <span class="balance"></span></p>
+          <div id="buttons"></div>
+      </div>
+  
+</body>
+
+</html>
